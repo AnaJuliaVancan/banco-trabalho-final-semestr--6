@@ -12,6 +12,15 @@ module.exports = {
       titulo: {
         type: Sequelize.STRING
       },
+      preco: {
+        type: Sequelize.DOUBLE
+      },
+      descricao: {
+        type: Sequelize.STRING
+      },
+      img: {
+        type: Sequelize.STRING
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
