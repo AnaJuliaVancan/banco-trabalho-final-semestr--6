@@ -36,6 +36,11 @@ app.put("/produto/:id", function (req, res){
     var resultado = produto.update(req.body, {where : {id:req.params.id}});
     res.json(resultado)
 });
+
+app.delete("/produto/:id", function (req, res){
+    var resultado = produto.delete(req.body, {where : {id:req.params.id}});
+    res.json(resultado)
+});    
  
 app.listen(3000, function(){
     console.log("O servidor está funcionando!")
