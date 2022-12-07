@@ -43,5 +43,5 @@ app.delete("/produto/:id", function (req, res){
 });    
  
 app.listen(3000, function(){
-    console.log("O servidor está funcionando!")
+    console.log("O servidor está funcionando certinho!")
 });
