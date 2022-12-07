@@ -38,7 +38,7 @@ app.put("/produto/:id", function (req, res){
 });
 
 app.delete("/produto/:id", function (req, res){
-    var resultado = produto.delete(req.body, {where : {id:req.params.id}});
+    var resultado = produto.destroy({where : {id:req.params.id}});
     res.json(resultado)
 });    
  
